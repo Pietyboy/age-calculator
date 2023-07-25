@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <div class="forms">
+      <form class="date_input">
+        <label id="day_name" class="date_name">Day</label>
+        <input id="day" class="date_input_window" type="text" placeholder="DD">
+        <p id="day_error" class="error" hidden>Must be a valid day</p>
+      </form>
+      
+      <form class="date_input">
+        <label id="month_name" class="date_name">Month</label>
+        <input id="month" class="date_input_window" type="text" placeholder="MM">
+        <p id="month_error" class="error" hidden>Must be a valid month</p>
+      </form>
+      <form class="date_input">
+        <label id="year_name" class="date_name">Year</label>
+        <input id="year" class="date_input_window" type="text" placeholder="YYYY">
+        <p id="year_error" class="error" hidden>Must be a valid year</p>
+      </form>
+    </div>
+    <div class="arrow_container">
+      <button onclick="actual_age()" class="arrow">
+        <img src="assets/images/icon-arrow.svg" width="20px" height="20px">
+      </button>
+    </div>
+
+    <article class="age">
+      <p class="date_output"><span id="years_output" class="age_output">--</span>years</p>
+      <p class="date_output"><span id="months_output" class="age_output">--</span>months</p>
+      <p class="date_output"><span id="days_output" class="age_output">--</span>days</p>
+    </article>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
